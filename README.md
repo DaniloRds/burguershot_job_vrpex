@@ -18,7 +18,7 @@
 
 ### Como instalo o script na minha base? (VRPEX)<br>
 
-Primeiramente você deve colocar os itens necessários na sua base, vou deixar as imagens deles caso queira usar.<br>
+Primeiramente você deve exercutar o arquivo .sql e colocar o banco de dados do script junto com o do seu servidor, depois deve colocar os itens necessários na sua base, vou deixar as imagens deles caso queira usar.<br>
 
 **LISTA DE ITENS:**<br>
 - bebidas<br>
