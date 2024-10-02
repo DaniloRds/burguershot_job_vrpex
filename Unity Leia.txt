@@ -1,5 +1,3 @@
-Olá, sou o Danilo desenvolvedor da Unity FiveM e quero agradecer primeiramente pela sua compra e confiança.
-
 Esse script tem várias funções que são sensacionais para seu roleplay e deixam seu servidor mais imersivo.
 
 Comandos:
@@ -25,7 +23,6 @@ coxadefrango
 ! Lembrando que o nome de spawn do item tem que ser igual o que está a cima.
 
 Você vai colocar a pasta [burguer-job] dentro de sua resources em local de sua escolha.
-
 Você starta a pasta em seu .cfg
 
 Dentro do .cfg você coloca
