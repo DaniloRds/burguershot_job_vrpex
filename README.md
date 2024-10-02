@@ -4,6 +4,12 @@
 
 > Esse script tem várias funções que são sensacionais para seu roleplay e deixam seu servidor mais imersivo.
 
+<hr>
+
+### [Clique aqui para fazer o download dos complementos](https://drive.google.com/drive/folders/1CUdOwMVM_SiRJM8oxWi-DnSQKZYV9ArQ?usp=sharing) <br>
+> É importante fazer o download dos complementos pois sem eles o script não vai estar 100%
+<hr>
+
 ### Comandos: <br>
 /burguershot -> Mostra quantos trabalhadores do burguershot estão em serviço (só pode ser usado pelo dono ou adm) <br>
 /shot -> Entra e saí de serviço (o funcionário precisa estar no local certo)
@@ -81,3 +87,7 @@ E por fim não se esqueça de configurar os itens dentro do seu inventário para
 - hamburguer <br>
 - pizza <br>
 - coxadefrango <br>
+
+<hr>
+
+#### Entre no nosso [discord](https://discord.gg/pbT5wVp8e9) e vem bater um papo na comunidade!
