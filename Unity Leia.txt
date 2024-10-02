@@ -1,0 +1,85 @@
+Olá, sou o Danilo desenvolvedor da Unity FiveM e quero agradecer primeiramente pela sua compra e confiança.
+
+Esse script tem várias funções que são sensacionais para seu roleplay e deixam seu servidor mais imersivo.
+
+Comandos:
+/burguershot -- Mostra quantos trabalhadores do burguershot estão em serviço (só pode ser usado pelo dono ou adm)
+/shot -- Entra e saí de serviço (precisa estar no local certo)
+
+INSTALAÇÃO:
+Como instalo o script na minha base (VRPEX)
+
+Primeiramente você deve colocar os itens necessários na sua base, vou deixar as imagens deles caso queira usar.
+
+LISTA DE ITENS:
+bebidas
+ingredientes
+lanche
+agua
+cola
+hotdog
+hamburguer
+pizza 
+coxadefrango
+
+! Lembrando que o nome de spawn do item tem que ser igual o que está a cima.
+
+Você vai colocar a pasta [burguer-job] dentro de sua resources em local de sua escolha.
+
+Você starta a pasta em seu .cfg
+
+Dentro do .cfg você coloca
+ensure [burguer-job]
+ou
+start [burguer-job]
+
+Nisso todos os scripts vão estar startados e funcionando, basta conferir os arquivos config.lua e ver se está do jeito que quer.
+
+Você deve retirar o veículo burrito da sua concessionária caso você venda ele pois faz parte do emprego e tem uma skin customizada.
+
+Coloque isso no groups da sua base
+
+	["burguer1"] = {
+		_config = {
+			title = "Dono do Burguershot",
+			gtype = "job"
+		},
+		"dono.burguershot",
+		"burguershot.permissao"
+	},
+	["burguer"] = {
+		_config = {
+			title = "Funcionário Burguershot",
+			gtype = "job"
+		},
+		"burguershot.permissao",
+		"servico.burguershot"
+	},
+	["burguer1-off"] = {
+		_config = {
+			title = "Burguershot: Fora de Serviço",
+			gtype = "job"
+		},
+		"burguershotdono.foradeservico"
+	},
+	["burguer-off"] = {
+		_config = {
+			title = "Burguershot: Fora de Serviço",
+			gtype = "job"
+		},
+		"burguershot.foradeservico"
+	},
+
+Não se esqueça de configurar os itens dentro do seu inventário para serem consumidos pelos players!
+agua
+cola
+hotdog
+hamburguer
+pizza 
+coxadefrango 
+
+
+
+
+
+

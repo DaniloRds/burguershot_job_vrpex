@@ -1,0 +1,315 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+header img {
+  position: relative;
+  top: 4rem;
+  z-index: 1;
+  width: 8.5rem;
+  height: 10rem;
+}
+
+main {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 9rem;
+  width: 55%;
+  height: 70vh;
+  background-color: #333;
+  border-radius: 10px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Seção de Controle */
+.controle {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-evenly;
+  background-color: #828282;
+  border-radius: 50px;
+  top: 7rem;
+  width: 80%;
+  height: 52vh;
+  padding: 1rem 1.5rem;
+
+  font-size: 20px;
+}
+
+.controle .cofre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #D9D9D9;
+  border-radius: 10px;
+  border-top-left-radius: 50px;
+  width: 40%;
+  height: 24vh;
+  padding-inline: 1.5rem;
+}
+
+.controle .cofre h1 {
+  color: #333;
+  margin-bottom: .75rem;
+}
+
+.controle .cofre p {
+  width: 90%;
+  color: #fff;
+  padding: .5rem;
+  background-color: #333;
+  border-radius: 10px;
+}
+
+.controle .cofre p span {
+  color: #4ECE3D;
+}
+
+.controle .cofre a {
+  padding: .75rem;
+  margin-top: .6rem;
+  width: 60%;
+  color: #fff;
+  background-color: #333;
+  border: 1px solid transparent;
+}
+
+.controle .cofre a:hover:nth-child(1n) {
+  border: 1px solid #4ECE3D;
+}
+.controle .cofre a:hover:nth-child(2n) {
+  border: 1px solid #3D50CE;
+}
+
+.controle .funcionarios {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-color: #D9D9D9;
+  border-radius: 10px;
+  border-bottom-left-radius: 50px;
+  margin-top: .5rem;
+  width: 40%;
+  height: 24vh;
+}
+
+.controle .funcionarios h1 {
+  color: #333;
+  margin-bottom: .1rem;
+}
+
+.controle .funcionarios a {
+  padding: .6rem;
+  margin-top: .7rem;
+  width: 60%;
+  color: #fff;
+  background-color: #333;
+  border: 1px solid transparent;
+}
+
+.controle .funcionarios a:hover:nth-child(2) {
+  border: 1px solid #4ECE3D;
+}
+.controle .funcionarios a:hover:nth-child(3) {
+  border: 1px solid #CE3D3D;
+}
+.controle .funcionarios a:hover:nth-child(4) {
+  border: 1px solid #3D50CE;
+}
+
+/* Seção de Estoque */
+ul, li {
+  list-style: none;
+}
+
+.estoque {
+  pointer-events: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  top: 52%;
+  left: 38%;
+  transform: translate(-50%, -50%);
+
+  width: 40%;
+  height: 48.7vh;
+  background-color: #D9D9D9;
+  border-radius: 10px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+
+  font-size: 20px;
+}
+
+.estoque h1 {
+  color: #333;
+  margin-bottom: .75rem;
+}
+
+.estoque .container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 42vh;
+  background-color: #333;
+  border-radius: 10px;
+}
+
+.estoque .container li {
+  width: 100%;
+  padding: .80rem;
+  margin-block: 1.25rem;
+  color: #fff;
+  background-color: #828282;
+  border: 1px solid #333;
+}
+
+.estoque .container li span {
+  color: #1e296c;
+}
+
+/* Responsividade em Monitores */
+@media (max-width: 1700px) {
+  .estoque {
+    top: 53%;
+  }
+}
+
+@media (max-width: 1460px) {
+  .controle {
+      font-size: 1rem;
+  }
+  .controle .cofre a {
+      padding: .75rem;
+      margin-top: .75rem;
+      width: 60%;
+      color: #fff;
+      background-color: #333;
+      border: 1px solid transparent;
+  }
+  .estoque {
+    top: 54.5%;
+  }
+  .estoque .container li {
+    margin-block: .7rem;
+  }
+}
+
+@media (max-width: 1250px) {
+  .controle {
+      font-size: .75rem;
+  }
+  .controle .cofre a {
+      padding: .75rem;
+      margin-top: 1rem;
+      width: 100%;
+  }
+  .controle .funcionarios a {
+      width: 90%;
+  }
+  .estoque {
+      font-size: 1rem;
+  }
+  .estoque .container li {
+    margin-block: .75rem;
+  }
+}
+
+@media (max-height: 900px) {
+  .controle {
+      font-size: .85rem;
+  }
+  .controle .cofre a {
+      padding: .6rem;
+      margin-top: .75rem;
+      width: 100%;
+  }
+  .controle .funcionarios a {
+      width: 90%;
+  }
+  .estoque {
+      font-size: 1rem;
+      top: 55%;
+  }
+  .estoque .container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 42vh;
+    background-color: #333;
+    border-radius: 10px;
+  }
+  .estoque .container li {
+    margin-block: .75rem;
+  }
+  
+}
+
+@media (max-height: 800px) {
+  .controle {
+      font-size: .65rem;
+  }
+  .controle .cofre a {
+      padding: .6rem;
+      margin-top: .75rem;
+      width: 100%;
+  }
+  .controle .funcionarios a {
+      width: 90%;
+  }
+  .estoque {
+      font-size: .9rem;
+      top: 58%;
+  }
+  .estoque .container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 42vh;
+    background-color: #333;
+    border-radius: 10px;
+  }
+  .estoque .container li {
+    margin-block: .75rem;
+  }
+  
+}
+
+@media (max-height: 720px) {
+  header img {
+    top: 4rem;
+    width: 5rem;
+    height: 6rem;
+  }
+  .controle .funcionarios a {
+      width: 80%;
+  }
+  .estoque {
+      font-size: .75rem;
+      top: 59%;
+  }
+  .estoque .container li {
+    margin-block: .5rem;
+  }
+  
+}
+
+
+
